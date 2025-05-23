@@ -14,3 +14,11 @@ map('n', 'k', [[v:count?'k':'gk']], { noremap = true, expr = true })
 map('n', '<leader>`', function()
   vim.cmd.edit '~/todo.md'
 end, { silent = true })
+
+map('n', 'dd', function()
+  local line = vim.api.nvim_get_current_line()
+  if line:match '^%s*$' then
+    return '"_dd'
+  end
+  return 'dd'
+end, { expr = true, silent = true })
