@@ -28,7 +28,7 @@ opt.swapfile = false
 opt.autoread = true
 vim.bo.autoread = true
 
-opt.cursorline = true
+-- opt.cursorline = true
 opt.termguicolors = true
 
 vim.api.nvim_create_autocmd('TextYankPost', {
