@@ -21,8 +21,5 @@ return {
     lspconfig.pyright.setup {
       capabilities = capabilities,
     }
-
-    -- python formatting
-    lspconfig.ruff.setup {}
   end,
 }
