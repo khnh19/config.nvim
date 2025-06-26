@@ -20,7 +20,7 @@ return {
       ensure_installed = {
         'lua-language-server',
         'stylua',
-        'eslint_d',
+        'eslint',
         'prettierd',
         'pyright',
         'ruff',
