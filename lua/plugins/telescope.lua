@@ -10,9 +10,7 @@ return {
   },
   config = function()
     local map = vim.keymap.set
-
     local builtin = require 'telescope.builtin'
-
     local actions = require 'telescope.actions'
 
     map('n', '<leader>f', builtin.find_files, {})
@@ -33,13 +31,11 @@ return {
         dynamic_preview_title = true,
         path_display = { 'smart' },
       },
-
       pickers = {
         find_files = {
           hidden = true,
         },
       },
-
       layout_config = {
         horizontal = {
           preview_cutoff = 100,
@@ -47,5 +43,6 @@ return {
         },
       },
     }
+    require('telescope').load_extension 'fzf'
   end,
 }
